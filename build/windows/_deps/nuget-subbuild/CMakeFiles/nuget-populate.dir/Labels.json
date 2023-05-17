@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/nuget-populate"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/bfbc3aa5bd402da7f9bb07b259f2bcff/nuget-populate.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/24cae575eb65cce763404b8b0fcaa8e1/nuget-populate-complete.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-build.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-configure.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-copyfile.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-download.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-install.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-patch.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-test.rule"
+		},
+		{
+			"file" : "E:/evm_app/build/windows/_deps/nuget-subbuild/CMakeFiles/76e4d0911e9e656f512f3f6b7cfdab07/nuget-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nuget-populate"
+		],
+		"name" : "nuget-populate"
+	}
+}

@@ -1,0 +1,12 @@
+E:/evm_app/build/windows/runner/Debug/data/icudtl.dat
+E:/evm_app/build/windows/runner/Debug/flutter_windows.dll
+E:/evm_app/build/windows/runner/Debug/permission_handler_windows_plugin.dll
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/assets/images/Evote.png
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/NOTICES
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+E:/evm_app/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

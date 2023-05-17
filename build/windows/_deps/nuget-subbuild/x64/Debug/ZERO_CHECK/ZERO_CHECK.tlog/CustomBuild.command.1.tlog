@@ -1,0 +1,10 @@
+^E:\EVM_APP\BUILD\WINDOWS\_DEPS\NUGET-SUBBUILD\CMAKEFILES\BFBC3AA5BD402DA7F9BB07B259F2BCFF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/evm_app/build/windows/_deps/nuget-subbuild -BE:/evm_app/build/windows/_deps/nuget-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/evm_app/build/windows/_deps/nuget-subbuild/nuget-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
