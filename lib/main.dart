@@ -15,22 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      // title: 'Flutter Demo',
-      // theme: ThemeData(
-      //   primarySwatch: Colors.blue,
-      // ),
-      // ignore: prefer_const_constructors
       debugShowCheckedModeBanner: false,
-      home: AnimatedSplashScreen(
-          splash: Column(
-            children: [
-              Image.asset('assets/images/Evote.png', scale: 10),
-              const Text("Intekhab")
-            ],
-          ),
-          duration: 1500,
-          backgroundColor: Colors.white,
-          nextScreen: const MyLogin(title: 'EVM')),
+      home: const MyLogin(title: 'EVM'),
       routes: {
         'register': (context) => const MyRegister(),
         'login': (context) => const MyLogin(title: 'EVM'),
