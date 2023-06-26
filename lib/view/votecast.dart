@@ -120,6 +120,7 @@ class VoteCastScreen extends StatelessWidget {
                               //bool hasVoted = await vote_check(hash);
 
                               if (await vote_check(hash) == false) {
+                                print("Already Voted");
                                 showDialog(
                                   context: context,
                                   builder: (BuildContext context) {
@@ -130,8 +131,13 @@ class VoteCastScreen extends StatelessWidget {
                                       actions: <Widget>[
                                         TextButton(
                                           onPressed: () {
-                                            Navigator.pop(
-                                                context); // Dismiss the dialog
+                                            //exit from the appliction and go to the home screen
+                                            Navigator.pop(context);
+                                            Navigator.pop(context);
+                                            
+                                            
+                                            // Navigator.pop(
+                                            //     context); // Dismiss the dialog
                                           },
                                           style: TextButton.styleFrom(
                                             // foregroundColor:
@@ -267,7 +273,7 @@ class VoteCastScreen extends StatelessWidget {
     //   'voter': hash,
     //   'voted': cnic,
     // };
-    print('Sending to blockchain: $voter, $votedTo');
+    debugPrint('Sending to blockchain: $voter, $votedTo');
 
     http.Response response = await http.get(Uri.parse(apiUrl));
 

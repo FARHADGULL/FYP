@@ -102,11 +102,11 @@ class _FaceDetectionScreenState extends State<FaceDetectionScreen> {
       ..fields['cnic_number'] = cnic.toString()
       ..files.add(await http.MultipartFile.fromPath('image', _image!.path));
 
-    print(
+    debugPrint(
         "Sending compare request to $url with cnic: $cnic and image: $_image");
     final response = await http.Response.fromStream(await request.send());
-    print("Process: $response.body");
-    print('Response status code: ${response.statusCode}');
+    debugPrint("Process: $response.body");
+    debugPrint('Response status code: ${response.statusCode}');
 
     setState(() {
       _isLoading = false;
@@ -115,7 +115,7 @@ class _FaceDetectionScreenState extends State<FaceDetectionScreen> {
     if (response.statusCode == 200) {
       String data = utf8.decode(response.bodyBytes);
       Map<String, dynamic> matchResult = json.decode(data);
-      print('Match result: $matchResult');
+      debugPrint('Match result: $matchResult');
 
       if (matchResult['compare'] == true) {
         setState(() {
@@ -127,10 +127,10 @@ class _FaceDetectionScreenState extends State<FaceDetectionScreen> {
           // ..fields['cnic_number'] = cnic.toString()
           ..files.add(await http.MultipartFile.fromPath('image', _image!.path));
 
-        print("Sending Liveness request to $url with image: $_image");
+        debugPrint("Sending Liveness request to $url with image: $_image");
         final response = await http.Response.fromStream(await request.send());
-        print("Process: $response.body");
-        print('Response status code: ${response.statusCode}');
+        debugPrint("Process: $response.body");
+        debugPrint('Response status code: ${response.statusCode}');
 
         setState(() {
           _isLoading = false;
@@ -138,7 +138,7 @@ class _FaceDetectionScreenState extends State<FaceDetectionScreen> {
         if (response.statusCode == 200) {
           String data = utf8.decode(response.bodyBytes);
           Map<String, dynamic> matchResult = json.decode(data);
-          print('Liveness result: $matchResult');
+          debugPrint('Liveness result: $matchResult');
           if (matchResult['liveness'] == true) {
             showDialog(
               context: context,

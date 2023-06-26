@@ -60,7 +60,7 @@ class CastedVote extends StatelessWidget {
             right: 15,
             child: ElevatedButton(
               onPressed: () {
-                Get.offAll(() => const CastedVote());
+                Get.offAllNamed('/');
               },
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(double.infinity, 50),
