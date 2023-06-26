@@ -2,7 +2,7 @@
     package="com.example.evm_app">
    <application
         android:requestLegacyExternalStorage="true"
-        android:label="evm_app"
+        android:label="Intekhab"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
